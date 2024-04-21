@@ -14,11 +14,12 @@
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <ul>
-                <li><a class="current" href="Ponzy.html">Menu</a></li>
+                <li><a href="Ponzy.html">Menu</a></li>
                 <li><a href="about_us.html">About</a></li>
                 <li><a href="plans.html">Plans</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Log in</a></li>
+                <li><a class="current" href="login.html">Log in</a></li>
+                <li><a class="current" href="signup.html">Sign in</a></li>
             </ul>
         </nav>
         <label for="nav_check" class="hamburger">
@@ -31,13 +32,15 @@
         <div class="contain">
            <div class="collect">
                <div class="capital">
-                <h2 class="span">Welcome to Eco Trade Company</h2>
-                    <h2 class="spans">Where we make all your investment dreams come true.</h2>
+                <h2 class="pan">Welcome to Eco Trade Company</h2>
                </div>
-            <p>Eco Trade Company Platform where we turn your capital into profit.
-                We pride ourselves on perfection in our services, 
-                Invest with us and you will never regret it 
-            </p>
+            <div class="cap">
+                <p>Eco Trade Company Platform where we turn your capital into profit, 
+                    and make all your investment dreams come true.
+                    We pride ourselves on perfection in our services, 
+                    Invest with us and you will never regret it 
+                </p>
+            </div>
                <button><a href="login.html">Get Started</a></button>
            </div>
         </div>
@@ -46,21 +49,21 @@
             <div class="icon">
                 <img src="laptop.png" class="top">
                 <div class="more">
-                    <li>We are all about out client safety and make sure our clients are satisfied</li><br>
-                    <li>Would you like to be our client?</li><br>
-                    <li>Sign up and get started.</li><br>
-                <button><a href="login.html">Log In</a></button>
+                    <h2 class="span">Learn More About Us</h2>
+                    <p>The company Eco Trade Company was founded in 2016 by a group of professionals in different fields of investment 
+                     services ranging from Cryptocurrency Investment, Oil & Gas, Forex trading, 
+                     Stocks & Commodities investment, & Real Estate investment.
+                     Our company provides acquisition, development, and finance expertise for both commercial and individual investors. 
+                     Our experience in structuring complicated financial transactions while accommodating diverse partnership 
+                     interests has allowed it to achieve over $500 Million in acquisitions and financing.</p>
                 </div>
             </div>
             
                <div class="aboutus">
-                    <h2 class="span">Learn More About Us</h2>
-                        <p>The company Eco Trade Company was founded in 2016 by a group of professionals in different fields of investment 
-                         services ranging from Cryptocurrency Investment, Oil & Gas, Forex trading, 
-                         Stocks & Commodities investment, & Real Estate investment.
-                         Our company provides acquisition, development, and finance expertise for both commercial and individual investors. 
-                         Our experience in structuring complicated financial transactions while accommodating diverse partnership 
-                         interests has allowed it to achieve over $500 Million in acquisitions and financing.</p>
+                    <li>We are all about out client safety and make sure our clients are satisfied</li><br>
+                    <li>Would you like to be our client?</li><br>
+                    <li>Log in and get started.</li><br>
+                <button><a href="login.html">Log In</a></button>
                </div>
             
         </div>
@@ -69,16 +72,47 @@
             <div class="start">
                 <h2 class="span">How To Get Started</h2>
                 <h2 class="spans">Very few easy steps</h2>
-                    <p><span>1.</span> Already have an account?</p>
-                    <p><span>2.</span> Log in your Capital Welcome Investment account: <a href="login.html">HERE</a></p>
-                    <p><span>3.</span> Fund your account, Select any payment method of your choosing <br> and deposit the standard amount for your investment.</p>
-                    <br>
-            </div>
-                <div class="trading">
-                    <h2 class="span">Trading</h2>
-                      <p>Your money would be traded by our finest and your interest would sent directly to your Eco Trade Company.</p>
-                      <br>
+                <div id="start">
+                    <div id="span">
+                        <h3>Already have an account?</h3>
+                        <p><span>1.</span>Log in your Eco Trading account now. <a href="login.html">HERE</a></p>
+                    </div>
+                     <div id="span">
+                        <h3> Fund your Account</h3>
+                        <p><span>2.</span>Select any payment method of your choosing then insert amount and proceed to deposit. </p>
+                    </div>
+                     <div id="span">
+                        <h3>Trading</h3>
+                        <p><span>3.</span> After Depositing, relax and wait for your income.</p>
+                    </div><br>
                 </div>
+                    <button><a href="login.html">Start Now</a></button>
+            </div>
+            
+        </div>
+
+        <div class="trading">
+            <h2 class="span">Trading</h2>
+              <p>Your money would be traded by our finest and your interest would sent directly to your Eco Trade Company.</p>
+              <br>
+              <div class="traders">
+                <div class="counter">
+                    <h3 class="count" data-target="1254">0</h3>
+                    <p>Total Investors</p>
+                </div>
+                <div class="counter">
+                    <h3 class="count" data-target="12168">0</h3>
+                    <p>Running Days</p>
+                </div>
+                <div class="counter">
+                    <h3 class="count" data-target="2987">0</h3>
+                    <p>Total Invested</p>
+                </div>
+                <div class="counter">
+                    <h3 class="count" data-target="098767">0</h3>
+                    <p>Total Withdraws</p>
+                </div>
+              </div>
         </div>
 
         <div class="review">
@@ -167,20 +201,33 @@
             
         </div>
 
-        <div class="contact">
-            <h2 class="span">Contact Us</h2>
-                    <a href="http://t.me/cashwealth.co"> Eco Trade Company</a> Join our Telegram group
-                    <p>ecotradecompany.co@gmail.com</p>
-       </div>
     <footer>
-        <h2>Eco Trade Company</h2>
-        <p>Founded and managed by a board of professional trading companies.
-           They came together to create a platform where people can achieve there dreams and goals.
-           We provide independent RIA and broker services that are powered by over 11years of industry experience.
-        </p>
+      <div class="foot">
+        <div class="footer">
+            <h2>Eco Trade Company</h2>
+            <p>Founded and managed by a board of professional trading companies.
+               They came together to create a platform where people can achieve there dreams and goals.
+               We provide independent RIA and broker services that are powered by over 11years of industry experience.
+            </p>
+           </div>
+            <div class="list">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="Ponzy.html">Home</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                        <p>Eco Trade Company</p>
+                        <a href="http://t.me/cashwealth.co">ecotradecompany.co@gmail.com</a>
+           </div>
+           
+      </div>
+       <div class="last"><p>Eco Trade Comapny Copyright &copy;419</p></div>
     </footer>
-    <footer>
-        <p>Eco Trade Comapny Copyright &copy;419</p>
-    </footer>
+    <script src="ponzy.js"></script>
 </body>
 </html>
