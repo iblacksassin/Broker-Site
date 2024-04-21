@@ -5,19 +5,20 @@ body{
 }
 /* Header */
 header{
-    width: 96%;
+    width: 92.5%;
     height: 90px;
     background: rgb(0, 0, 0);
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 70px;
+    padding: 0 40px;
     border-bottom: 20px;
     border-bottom: blue 3px solid;
 }
 .header{
     color: blue;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: .7rem;
 }
 nav ul{
@@ -29,8 +30,10 @@ nav ul li a{
     text-decoration: none;
     list-style: none;
     margin: 0 2px;
-    font-weight: 600;
-    padding: 8px 18px;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Arial;
+    padding: 6px 15px;
     transition: 0.2s;
     border-radius: 30px;
 }
@@ -76,24 +79,35 @@ button:hover{
     background:  white;
     color: blue;
 }
-.contain{
-    background: url(chart.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    margin-top: 4px;
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(255, 255, 255);
-    justify-content: center;
-    animation: change 30s infinite ease-in-out;
+.pan{
+    color: blue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.8rem;
+
 }
-@keyframes change{
+
+.contain{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    background: url(chart.jpg);
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
     0%{
         background-image: url(2856258_ab03_2.jpg);
     }
@@ -104,10 +118,10 @@ button:hover{
         background-image: url(1_5hks5c7coEa_TvXSLKfu2A.jpg);
     }
     60%{
-        background-image: url(0_Vq4k5t_bVvGrBJtS.jpg);
+        background-image: url(chart.jpg);
     }
     80%{
-        background-image: url(lptchrt.jpg);
+        background-image: url(0_Vq4k5t_bVvGrBJtS.jpg);
     }
     100%{
         background-image: url(2856258_ab03_2.jpg);
@@ -116,7 +130,12 @@ button:hover{
 
 
 .capital{
-    margin-bottom: 50px;
+    padding-top: 10rem;
+}
+.cap{
+    width: 45rem;
+    margin: auto;
+    justify-self: center;
 }
 .collect{
     padding: 20px;
@@ -127,20 +146,38 @@ button:hover{
     text-decoration: solid;
     color: rgb(255, 255, 255) ;
 }
-.span{
-    font-size: 1.6rem;
+#start{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+#start a{
     color: blue;
 }
-.spans{
-    color: rgba(14, 14, 197, 0.74);
-    font-weight: 600;
-    font-size: 1rem;
+#span{
+    font-size: 1.2rem;
+    list-style: none;
+    color: white;
+    text-align: center;
+    background: rgba(1, 1, 51, 0.725);
+    border-radius: 10px;
+    padding: 25px;
+}
+.span{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: blue;
 }
 span{
     color: blue;
+    font-size: 4rem;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .about{
+    margin-top: 5rem;
     padding: 10px;
+    background: rgb(4, 4, 4);
 }
 a{
     text-decoration: none;
@@ -150,27 +187,25 @@ a:hover{
     color: blue;
 }
 .icon{
-    float: right;
-    width: 100%;
+    float: left;
+    width: 95%;
 }
 .more{
     color: white;
-    padding: 10px;
     float: right;
-    margin-top: 1rem;
-    width: 90%;
-}
-.more li{
-    list-style: none;
     font-size: 1rem;
+    width: 45%;
 }
 .aboutus{
-    padding: 10px;
     color: rgb(255, 255, 255) ;
     font-size: 1.1rem;
+    padding: 32px;
+} 
+.aboutus li{
+    list-style: none;
 }
 .top{
-    width: 340px;
+    width: 500px;
     margin: auto;
     margin-top: 20px;
 }
@@ -183,7 +218,28 @@ a:hover{
 }
 .trading{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+.traders{
+    background: url(1_5hks5c7coEa_TvXSLKfu2A.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:serif;
+}
+.counter{
+    padding: 60px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.count{
+    font-size: 3.5rem;
+    color: blue;
 }
 
 .container{
@@ -214,13 +270,13 @@ a:hover{
 }
 .plans{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 22rem);
+    grid-template-columns: repeat(auto-fit, 17rem);
     align-items: flex-end;
     justify-content: center;
-    gap: 9rem;
+    gap: 4rem;
     list-style: none;
     margin-top: 7rem;
-    padding: 30px;
+    padding: 25px;
     margin: auto;
 }
 .plan{
@@ -230,11 +286,11 @@ a:hover{
     border-color: blue;
     border-radius: 30px;
     padding: 25px;
-    width: 19rem;
+    width: 15rem;
     border-style: dashed;
 }
 li{
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .trade{
     padding: 30px;
@@ -264,29 +320,180 @@ li{
     width: 20px;
 }
 
+footer{
+    background: blue;
+}
+.foot{
+    position: relative;
+    display: flex;
+    padding: 10px;
+}
+.footer{
+    width: 25rem;
+    text-align: start;
+    font-size: 1.1rem;
+    padding: 20px;
+}
+.list li{
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+.list{
+    padding: 20px;
+    width: 10rem;
+    text-align: center;
+    justify-content: center;
+}
 .contact{
     text-align: center;
     text-decoration: solid;
     color: rgb(71, 63, 63) ;
     font-size: 1.2rem;
 }
-footer{
-    background: blue;
+.last{
+    border-top: black 2px solid;
     text-align: center;
-    text-decoration: solid;
-    color: rgb(0, 0, 0) ;
     padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1rem;
 }
 
  /**media query*/
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 800px) {
     header{
-        width: 90%;
+        width: 93%;
         padding: 0 20px;
+        position: fixed;
+    }
+    .pan{
+        color: blue;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+    }
+    .capital{
+        padding-top: 10rem;
+    }
+    .cap{
+        width: 22rem;
+        margin: auto;
+        justify-self: center;
+    }
+    .collect{
+        padding: 20px;
+        top: 15%;
+    }
+    .contain{
+        color: white;
+        text-align: center;
+        font-size: 1.3rem;
+        background: url(chart.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 5s;
+    
+        animation-name: animate;
+        animation-direction: alternate-reverse;
+        animation-duration: 30s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes animate {
+    0%{
+        background-image: url(2856258_ab03_2.jpg);
+    }
+    20%{
+        background-image: url(lptchrt.jpg);
+    }
+    40%{
+        background-image: url(1_5hks5c7coEa_TvXSLKfu2A.jpg);
+    }
+    60%{
+        background-image: url(chart.jpg);
+    }
+    80%{
+        background-image: url(0_Vq4k5t_bVvGrBJtS.jpg);
+    }
+    100%{
+        background-image: url(2856258_ab03_2.jpg);
+    }
+}
 
+
+    .getstarted{
+        padding: 10px;
+    }
+    .start{
+        padding: 10px;
+        font-size: 1rem;
+    }
+    #start{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 20rem);
+        align-items: flex-end;
+        justify-content: center;
+        gap: 4rem;
+        list-style: none;
+        margin-top: 7rem;
+        padding: 25px;
+        margin: auto;
+    }
+    #span{
+        font-size: 1.2rem;
+        list-style: none;
+        color: white;
+        text-align: center;
+        background: rgba(1, 1, 51, 0.725);
+        border-radius: 10px;
+        padding: 25px;
+        width: 17rem;
+    }
+    #start a{
+        color: blue;
+    }
+    .span{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2rem;
+        color: blue;
+    }
+    span{
+        color: blue;
+        font-size: 3.5rem;
+        font-weight: 700;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+   .about{
+    margin-top: 5rem;
+    padding: 10px;
+    background: rgb(4, 4, 4);
+    }
+    .icon{
+        width: 95%;
+        float: left;
+    }
+    .top{
+        width: 350px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .more{
+        color: white;
+        float: right;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .aboutus{
+        color: rgb(255, 255, 255) ;
+        font-size: 2rem;
+        padding: 10px;
+    } 
+    .aboutus li{
+        list-style: none;
     }
     nav{
         position: absolute;
@@ -321,6 +528,111 @@ footer{
     }
     .hamburger{
         display: block;
+    }
+
+    .trading{
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .traders{
+        background: url(1_5hks5c7coEa_TvXSLKfu2A.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:serif;
+    }
+    #traders{
+        padding: 10px;
+    }
+    .num{
+        color: white;
+        font-size: 1.8rem;
+    }
+    .text{
+        color: blue;
+        font-size: .8rem;
+    }
+
+    .trading{
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .traders{
+        background: url(1_5hks5c7coEa_TvXSLKfu2A.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family:serif;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 10rem);
+    }
+    .counter{
+        padding: 20px;
+    }
+    .count{
+        font-size: 4rem;
+        color: blue;
+    }
+    
+    .container{
+        width: 100%;
+        height: 100vh;
+        background: url(chrt.png) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        text-align: center;
+        color:rgb(255, 255, 255) ;
+        font-size: 1.1rem;
+    }
+
+    footer{
+        background: blue;
+    }
+    .foot{
+        position: relative;
+        display:block;
+        padding: 10px;
+    }
+    .footer{
+        width: 20rem;
+        text-align: start;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    .list li{
+        display: flex;
+        list-style: none;
+        padding: 10px;
+        font-size: 1.4rem;
+    }
+    .list{
+        padding: 10px;
+        width: 10rem;
+        text-align: center;
+        justify-content: center;
+    }
+    .contact{
+        text-align: center;
+        text-decoration: solid;
+        color: rgb(71, 63, 63) ;
+        font-size: 1.2rem;
+    }
+    .last{
+        border-top: black 2px solid;
+        text-align: center;
+        padding: 20px;
     }
 }
 
